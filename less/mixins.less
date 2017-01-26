@@ -1,0 +1,99 @@
+//фоновое изображение главной страницы
+.background() {
+	background: url("../img/1-index-1.jpg") no-repeat 50% 0;
+	opacity: 0.7;
+}
+
+//дополнительные переменные и миксины для построения сеток
+
+@color-1: rgba(225, 55, 55, 0.6);
+@color-2: spin(@color-1, 40);
+@color-3: spin(@color-1, -80);
+@color-4: spin(@color-1, 160);
+@color-5: spin(@color-1, 220);
+@color-6: spin(@color-1, 280);
+@color-7: spin(@color-1, 340);
+
+.outlines(@color: @color-1, @color: @color-1) {
+	@bg-color: lighten(@color, 10%);
+	@border-color: darken(spin(@bg-color, -10), 5%);
+	background-color: @bg-color;	
+	outline: 2px solid @border-color;	
+}
+
+.outline(@color: #000000) {
+	outline: 2px solid @color;
+}
+
+//размеры:
+.size(@width: 100px, @height: 100px) {
+    width: @width;
+    height: @height;
+}
+
+
+
+//флексы:
+.flex-type-1() {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+}
+
+.flex-type-2() {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.flex-type-3() {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.flex-type-4() {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+}
+
+//псевдоэлементы
+.before(@width: 100px, @height: 100px) {
+	position: absolute;
+	display: block;
+	content: "";
+	width: @width;
+	height: @height;
+	top: 0px;
+	left: 0%;	
+}
+
+.after(@width: 20px, @height: 20px) {
+	display: block;
+	content: "";
+	position: absolute;
+	width: @width;
+	height: @height;
+	top: 0px;
+	left: 0%;
+}
+
+//списки и элементы списка
+.ul-0() {
+	padding: 0;
+}
+
+.li-0() {
+	list-style: none;	
+}
+
+//другие миксины
+.p-0() {
+	margin: 0;
+}
+
+.a() {
+	text-decoration: none;
+	color: inherit;
+}
