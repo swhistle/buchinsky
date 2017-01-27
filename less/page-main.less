@@ -1,12 +1,49 @@
-.page-main {	
+.page-main {
+	margin-top: 15px;		
 
 	&__section {
 		.outlines(@color-2);
 		.flex-type-1();
-		min-height: 264px;
+		height: 250px;
+		margin-bottom: 15px;
 	}
 
 	&__video {
 		.outline();
+	}
+
+	&__content {
+		flex-grow: 1;		
+		text-align: center;
+		padding-top: 70px;
+		box-sizing: border-box;
+
+		.outline();
+
+		a {
+			text-decoration: none;
+			color: inherit;
+			display: block;
+			font-family: 'BERNIER', sans-serif;
+			font-size: 35px;
+			line-height: 50px;
+			color: @color-f;
+			width: 66%;
+			margin: 0 auto;
+
+
+			.outline();
+		}
+
+		span {
+			display: block;
+			font-size: 20px;
+			line-height: 30px;
+			color: @color-f;
+			width: 66%;
+			margin: 0 auto;
+
+			.outline();
+		}
 	}
 }

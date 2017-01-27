@@ -1,2 +1,227 @@
-html,body{width:auto;min-height:1000px;margin:0;padding:0}@font-face{font-family:'BERNIER';src:url('../fonts/BERNIERRegular-Regular.otf');font-weight:400;font-style:normal}@font-face{font-family:'Cassandra';src:url('../fonts/cassandra.ttf');font-weight:400;font-style:normal}body{font-size:16px;line-height:22px;color:#000;font-weight:400;font-family:'BERNIER',sans-serif;background-color:#fff}h1{font-family:'Cassandra',arial;font-size:60px;line-height:75px;color:#fff;font-weight:400}h2{font-family:'Cassandra',arial;font-size:45px;line-height:55px;color:#fff;font-weight:400}.page-header{background-color:rgba(232,99,99,.6);outline:2px solid rgba(228,77,102,.6);padding-top:80px;position:relative}.page-header__title{outline:2px solid #000;text-align:center;padding:10px;margin-bottom:10px}.page-header__main-nav{position:absolute;top:0;left:17%;width:66%;box-sizing:border-box}.page-header__info{display:flex;justify-content:space-between;flex-wrap:nowrap}.page-header__info p{outline:2px solid #000;height:100px;width:30%;padding-top:80px;box-sizing:border-box;text-align:center}.main-nav{outline:2px solid #000;height:40px}.main-nav__list{display:flex;justify-content:center;flex-wrap:nowrap}.main-nav__item{outline:2px solid #000;padding:10px 20px;width:20%;text-align:center;list-style:none;box-sizing:border-box}.page-main__section{background-color:rgba(232,188,99,.6);outline:2px solid rgba(228,153,77,.6);display:flex;justify-content:space-between;flex-wrap:nowrap;min-height:264px}.page-main__video{outline:2px solid #000}.features{min-height:170px;background-color:rgba(188,99,232,.6);outline:2px solid rgba(153,77,228,.6)}.page-footer{height:110px;background-color:rgba(99,232,188,.6);outline:2px solid rgba(77,228,153,.6)}.page-footer__social{width:25%;margin:0 auto;outline:2px solid #000}
+html,
+body {
+  width: auto;
+  min-height: 1000px;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('../fonts/Myriad-Pro.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BERNIER';
+  src: url('../fonts/BERNIERRegular-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cassandra';
+  src: url('../fonts/cassandra.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-size: 16px;
+  line-height: 22px;
+  /*letter-spacing: 1px;
+    word-spacing: -3px;*/
+  color: #ffffff;
+  font-weight: normal;
+  font-family: 'Myriad Pro', sans-serif;
+  background-color: #19230a;
+}
+h1 {
+  font-family: 'Cassandra', arial;
+  font-size: 60px;
+  line-height: 75px;
+  color: #ffffff;
+  font-weight: normal;
+}
+h2 {
+  font-family: 'Cassandra', arial;
+  font-size: 45px;
+  line-height: 55px;
+  color: #ffffff;
+  font-weight: normal;
+}
+.page-header {
+  padding-top: 110px;
+  padding-bottom: 15px;
+  position: relative;
+  background: url('../img/header-img.jpg') no-repeat;
+  background-size: 1273px 467px;
+  min-height: 330px;
+}
+.page-header__title {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 90px;
+}
+.page-header__main-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.page-header__info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.page-header__info p {
+  height: 90px;
+  width: 30%;
+  padding-top: 70px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.page-header__info p:first-of-type {
+  background: url('../img/1-ul.png') no-repeat;
+  background-size: 59px 54px;
+  background-position: 50% 0;
+}
+.page-header__info p:nth-of-type(2) {
+  background: url('../img/2-ul-out.png') no-repeat;
+  background-size: 175px 56px;
+  background-position: 50% 0;
+}
+.page-header__info p:last-of-type {
+  background: url('../img/3-mobile.png') no-repeat;
+  background-size: 49px 56px;
+  background-position: 50% 0;
+}
+.main-nav {
+  background-color: rgba(25, 35, 10, 0.5);
+  height: 40px;
+}
+.main-nav__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.main-nav__item {
+  padding: 10px 10px;
+  width: 15%;
+  text-align: center;
+  list-style: none;
+  box-sizing: border-box;
+}
+.main-nav__item a {
+  text-decoration: none;
+  color: inherit;
+}
+.page-main {
+  margin-top: 15px;
+}
+.page-main__section {
+  background-color: rgba(232, 188, 99, 0.6);
+  outline: 2px solid rgba(228, 153, 77, 0.6);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  height: 250px;
+  margin-bottom: 15px;
+}
+.page-main__video {
+  outline: 2px solid #000000;
+}
+.page-main__content {
+  flex-grow: 1;
+  text-align: center;
+  padding-top: 70px;
+  box-sizing: border-box;
+  outline: 2px solid #000000;
+}
+.page-main__content a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  font-family: 'BERNIER', sans-serif;
+  font-size: 35px;
+  line-height: 50px;
+  color: #ffffff;
+  width: 66%;
+  margin: 0 auto;
+  outline: 2px solid #000000;
+}
+.page-main__content span {
+  display: block;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  width: 66%;
+  margin: 0 auto;
+  outline: 2px solid #000000;
+}
+.features {
+  min-height: 170px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: rgba(188, 99, 232, 0.6);
+  outline: 2px solid rgba(153, 77, 228, 0.6);
+}
+.features__item {
+  width: 33%;
+  flex-grow: 1;
+  outline: 2px solid #000000;
+}
+.page-footer {
+  height: 110px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgba(99, 232, 188, 0.6);
+  outline: 2px solid rgba(77, 228, 153, 0.6);
+}
+.page-footer__social {
+  width: 400px;
+  margin: 0 auto;
+}
+.social-links {
+  display: block;
+  width: 400px;
+  min-height: 100px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  outline: 2px solid white;
+}
+.social-links__container {
+  display: block;
+  width: 110px;
+  min-height: 45px;
+  list-style: none;
+  border-radius: 50%;
+  outline: 2px solid red;
+  height: 85px;
+}
+.social-link {
+  display: block;
+  font-size: 0;
+  background-color: rgba(232, 99, 99, 0.6);
+  outline: 2px solid rgba(228, 77, 102, 0.6);
+  /*&--vk {	
+		background: url("../img/spritesheet.png") no-repeat;	
+		background-position: -7px -2px;
+	}	
+
+	&--in {
+		background: url("../img/spritesheet.png") no-repeat;
+		background-position: -101px -6px;
+	}
+
+	&--tw {
+		background: url("../img/spritesheet.png") no-repeat;
+		background-position: -55px -6px;
+	}*/
+
+}
+
 /* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
