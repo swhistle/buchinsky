@@ -1,10 +1,21 @@
 .page-header {
 	padding-top: 110px;
-	padding-bottom: 15px;
 	position: relative;
-	background: url('../img/header-img.jpg') no-repeat;
-	background-size: 1273px 467px;
-	min-height: 330px;
+	//background: url('../img/header-img.jpg') no-repeat;
+	//background-size: 100% auto;
+	min-height: 460px;
+	box-sizing: border-box;
+
+
+	video {
+		min-width: 100%;
+		height: auto;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		//overflow: hidden;	
+	}
 
 	&__title {
 		text-align: center;
@@ -14,6 +25,7 @@
 
 	&__main-nav {
 		position: absolute;
+		z-index: 10;
 		top: 0;
 		left: 0;
 		width: 100%;
