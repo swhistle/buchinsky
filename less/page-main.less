@@ -5,7 +5,7 @@
 	&__section {
 		//.outlines(@color-2);
 		.flex-type-1();
-		height: 250px;
+		height: 400px;
 		margin-bottom: 15px;
 	}
 
@@ -16,12 +16,16 @@
 	&__content {
 		flex-grow: 1;		
 		text-align: center;
-		padding-top: 70px;
+		padding-top: 150px;
 		box-sizing: border-box;
-
-
+		opacity: 0.7;
+		border-left: 5px solid @color-0;
 		background: url('../img/section1.jpg') no-repeat;
 		background-size: 100% auto;
+
+		&:hover {
+			opacity: 1;
+		}
 
 		//.outline();
 
@@ -33,9 +37,14 @@
 			font-size: 35px;
 			line-height: 50px;
 			color: @color-f;
-			width: 66%;
+			width: 66%;			
 			margin: 0 auto;
 			margin-bottom: 10px;
+			transition: 0.5s;
+
+			&:hover {
+				color: #aaddaa;
+			}
 
 			//.outline();
 		}
